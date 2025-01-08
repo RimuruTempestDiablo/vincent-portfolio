@@ -1,7 +1,6 @@
 {
   "name": "Portfolio-Website",
   "homepage": "https://RimuruTempestDiablo/github.io/vincent-portfolio/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
