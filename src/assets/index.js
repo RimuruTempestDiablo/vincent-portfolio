@@ -2,6 +2,7 @@
 import mathwork from "./company/mathwork.png";
 import edunet from "./company/edunet.png";
 import eduskill from "./company/eduskill.png";
+import psau from "./company/psau.png";
 
 // Import tech stack images
 import python from "./tech-stack/python.png";
@@ -16,6 +17,11 @@ import payloadmaster from "./projects/payloadmaster.png";
 import mhft from "./projects/mhft.png";
 import sketcher from "./projects/sketcher.png";
 import CompileVortex from "./projects/CompileVortex.png";
+import WaterTemp from "./projects/WaterTemp.png";
+import CowSell from "./projects/CowSell.png";
+import AmGold from "./projects/AmGold.png";
+import Dreambit from "./projects/Dreambit.png";
+import BNB from "./projects/BNB.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -58,10 +64,16 @@ export {
   mhft,
   sketcher,
   CompileVortex,
+  WaterTemp,
+  CowSell,
+  AmGold,
+  Dreambit,
+  BNB,
   logo,
   menu,
   close,
   eduskill,
+  psau,
   next,
   php,
   sql,

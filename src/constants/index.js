@@ -1,8 +1,4 @@
 import {
-  c,
-  python,
-  java,
-  cpp,
   javascript,
   html,
   css,
@@ -10,16 +6,18 @@ import {
   tailwind,
   nodejs,
   git,
-  edunet,
-  weatherpedia,
+  psau,
   termpw,
-  payloadmaster,
   threejs,
-  mhft,
-  sketcher,
-  mathwork,
-  CompileVortex,
   eduskill,
+  next,
+  php,
+  sql,
+  WaterTemp,
+  CowSell,
+  AmGold,
+  Dreambit,
+  BNB
 } from "../assets";
 
 export const navLinks = [
@@ -38,10 +36,16 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "HTML 5", icon: html },
+  { title: "CSS 3", icon: css },
+  { title: "JavaScript", icon: javascript },
+  { title: "React JS", icon: reactjs },
+  { title: "Tailwind CSS", icon: tailwind },
+  { title: "Node JS", icon: nodejs },
+  { title: "Next JS", icon: next },
+  { title: "PHP", icon: php },
+  { title: "My Sql", icon: sql },
+  { title: "Git", icon: git },
 ];
 
 export const technologies = [
@@ -57,114 +61,107 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
+    title: "Web Developer",
+    company_name: "GH Web Development Services",
     icon: eduskill,
-    iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    iconBg: "#214158",
+    date: "Jan 2024 - Jan 2025",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Acquired hands-on knowledge of web designing, web development, web services, and deployment.",
+      "Also gaining a solid foundation in Web development, covering website layout, data structure, and data management.",
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
-    iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    title: "IT Intern",
+    company_name: "Biosytem Office | Pampanga State Agricultural University",
+    icon: psau,
+    iconBg: "#214158",
+    date: "Jan 2023 - May 2023",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
-    ],
-  },
-  {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
-    iconBg: "#161329",
-    date: "June 2023 - July 2023",
-    points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Completed internship, gaining a strong foundation in IT tasks, including web development and setting up IT hardwares.",
+      "Acquired practical skills in setting up networks, web development, image processing, and data analysis.",
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "QuBe",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "A Web-based Quiz Bee Competition Platform",
+    tags: [
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "green-text-gradient" },
+      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "NodeJS", color: "pink-text-gradient" },
+    ],
+    image: termpw,
+    source_code_link: "",
+  },
+  {
+    name: "WaterTemp",
+    description:
+      "Web-based platform that allows users to access water temperature information for their fish in the field",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "HTML", color: "green-text-gradient" },
       { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "PHP", color: "pink-text-gradient" },
+      { name: "MySql", color: "pink-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: WaterTemp,
+    source_code_link: "",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Cow Sell",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "A web-system that automates the manual way of ordering cows. From farm to factories to goods down to customer food products made of cow.",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "JQuery", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "pink-text-gradient" },
+      { name: "MySql", color: "pink-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: CowSell,
+    source_code_link: "",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "AM Gold",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "A web-system that automates the manual way of ordering gold. This features different variety of bundles of gold ranging in different prices from affordable ones and luxurious offers.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "JQuery", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "pink-text-gradient" },
+      { name: "MySql", color: "pink-text-gradient" },
     ],
-    image: mhft,
-    source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+    image: AmGold,
+    source_code_link: "",
   },
   {
-    name: "PayloadMaster",
+    name: "BNB135",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A option trading platform for cryptocurrencies. Betting if the token will go up or go down in different intervals 1, 3, 5 minutes respectively",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "JQuery", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "pink-text-gradient" },
+      { name: "MySql", color: "pink-text-gradient" },
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    image: BNB,
+    source_code_link: "",
   },
   {
-    name: "CompileVortex",
+    name: "DreamBit",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A crypto exchange platform running from the web environment. This system caters token trading, p2p, setting leverage, tweaking TP/SL and so on.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
+      { name: "NextJS", color: "blue-text-gradient" },
+      { name: "Tailwind", color: "green-text-gradient" },
+      { name: "MySql", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  },
-  {
-    name: "Sketcher",
-    description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-    tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
-    ],
-
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: Dreambit,
+    source_code_link: "",
   },
 ];
