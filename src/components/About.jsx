@@ -38,13 +38,19 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-blue-100 text-[17px] max-w-3xl leading-[30px] text-justify"
       >
-        I am a Computer Science student at SRM University and multilingual speaker with a passion
-        for ethical hacking, artificial intelligence, and neural language processing. I am looking
+        I am a enthusiastic and diligent information technology
+        professional with a strong academic foundation and a
+        passion for emerging technologies. I am looking
         to join a company that values innovation, collaboration, and continuous learning and am
         confident that my enthusiasm and drive will help me succeed in any role that leverages my
-        passion for technology.
+        passion for technology. Eager to contribute to a dynamic team, gain
+        practical experience, and further develop my expertise in
+        areas such as software development, networkadministration, or cybersecurity.
+        Committed to continuous
+        learning and professional growth while making a positive
+        impact on the organization's technological advancement.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
