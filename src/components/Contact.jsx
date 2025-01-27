@@ -67,16 +67,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r2i0by4",
-        "template_mf5x3bh",
+        "service_y1kebua",
+        "template_md91dd3",
         {
           from_name: form.name,
-          to_name: "Lohit Kolluri",
+          to_name: "Vincent Flores",
           from_email: form.email,
-          to_email: "lohitkolluri@gmail.com",
+          to_email: "vincentperezflores@gmail.com",
           message: form.message,
         },
-        "p-gXzzyvEhPaJ0XA-"
+        "0nv-3jFkHJu877NUr"
       )
       .then(
         () => {
@@ -93,7 +93,7 @@ const Contact = () => {
       .catch((error) => {
         setLoading(false);
         console.error(error);
-        setConfirmation("Something went wrong. Please try again. :/");
+        setConfirmation("Something went wrong. Please try again.");
       });
   };
 
