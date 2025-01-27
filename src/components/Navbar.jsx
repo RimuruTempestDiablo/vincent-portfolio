@@ -25,8 +25,8 @@ const Navbar = () => {
         <li
           key={link.id}
           className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
+            active === link.title ? 'text-sky-500 font-extrabold' : isSecondary ? 'text-secondary' : 'text-white'
+          } hover:text-sky-500 hover:border-b hover:border-sky-500 text-[20px] font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
             if (isSecondary) {
@@ -39,8 +39,8 @@ const Navbar = () => {
       ))}
       <li
         className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
+          isSecondary ? 'secondary' : 'text-sky-500'
+        } hover:text-sky-500 hover:border-b hover:border-sky-500 text-[20px] font-medium cursor-pointer`}
       >
         <button onClick={toggleResume}>Resume</button>
       </li>
@@ -49,42 +49,43 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-primary`}
-      >
-        <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-          <Link
-            to="/"
-            className="flex items-center gap-2"
-            onClick={() => {
-              setActive('');
-              window.scrollTo(0, 0);
-            }}
-          >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-            <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              VINCENT&nbsp;
-              <span className="sm:block hidden">FLORES</span>
-            </p>
-          </Link>
-          {renderNavLinks(false)}
-          <div className="sm:hidden flex flex-1 justify-end items-center">
-            <img
-              src={toggle ? close : menu}
-              alt="menu"
-              className="w-[28px] h-[18px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
-            />
-            <div
-              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
-                toggle ? 'flex' : 'hidden'
-              }`}
+      <header className="fixed left-0 right-0 top-0 z-10">
+        <nav
+          className="m-2 md:m-5 flex h-16 items-center rounded-lg bg-sky-900/50 px-4 backdrop-blur-sm"
+        >
+          <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+            <Link
+              to="/"
+              className="flex items-center gap-2"
+              onClick={() => {
+                setActive('');
+                window.scrollTo(0, 0);
+              }}
             >
-              {renderNavLinks(true)}
+              <p className="text-white text-[20px] font-bold cursor-pointer flex">
+                VINCENT&nbsp;
+                <span className="sm:block hidden">FLORES</span>
+              </p>
+            </Link>
+            {renderNavLinks(false)}
+            <div className="sm:hidden flex flex-1 justify-end items-center">
+              <img
+                src={toggle ? close : menu}
+                alt="menu"
+                className="w-[28px] h-[18px] object-contain cursor-pointer"
+                onClick={() => setToggle(!toggle)}
+              />
+              <div
+                className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
+                  toggle ? 'flex' : 'hidden'
+                }`}
+              >
+                {renderNavLinks(true)}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
     </>
   );
 };
