@@ -7,9 +7,7 @@ import {
   nodejs,
   git,
   psau,
-  termpw,
   threejs,
-  eduskill,
   next,
   php,
   sql,
@@ -17,7 +15,9 @@ import {
   CowSell,
   AmGold,
   Dreambit,
-  BNB
+  BNB,
+  ghweb,
+  Qube
 } from "../assets";
 
 export const navLinks = [
@@ -63,7 +63,7 @@ export const experiences = [
   {
     title: "Web Developer",
     company_name: "GH Web Development Services",
-    icon: eduskill,
+    icon: ghweb,
     iconBg: "#214158",
     date: "Jan 2024 - Jan 2025",
     points: [
@@ -96,7 +96,7 @@ export const projects = [
       { name: "Javascript", color: "pink-text-gradient" },
       { name: "NodeJS", color: "pink-text-gradient" },
     ],
-    image: termpw,
+    image: Qube,
     source_code_link: "",
   },
   {

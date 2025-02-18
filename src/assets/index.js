@@ -3,6 +3,7 @@ import mathwork from "./company/mathwork.png";
 import edunet from "./company/edunet.png";
 import eduskill from "./company/eduskill.png";
 import psau from "./company/psau.png";
+import ghweb from "./company/ghweb.png";
 
 // Import tech stack images
 import python from "./tech-stack/python.png";
@@ -22,6 +23,7 @@ import CowSell from "./projects/CowSell.png";
 import AmGold from "./projects/AmGold.png";
 import Dreambit from "./projects/Dreambit.png";
 import BNB from "./projects/BNB.png";
+import Qube from "./projects/qube.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -69,11 +71,13 @@ export {
   AmGold,
   Dreambit,
   BNB,
+  Qube,
   logo,
   menu,
   close,
   eduskill,
   psau,
+  ghweb,
   next,
   php,
   sql,
