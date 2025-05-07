@@ -65,7 +65,7 @@ export const experiences = [
     company_name: "GH Web Development Services",
     icon: ghweb,
     iconBg: "#214158",
-    date: "Jan 2024 - Jan 2025",
+    date: "Jan 2024 - Present",
     points: [
       "Acquired hands-on knowledge of web designing, web development, web services, and deployment.",
       "Also gaining a solid foundation in Web development, covering website layout, data structure, and data management.",
